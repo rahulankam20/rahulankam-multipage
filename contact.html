@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        body{
+            background-image: url(https://wallpaperaccess.com/full/1128280.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100vh;
+            background-color: rgba(0, 0, 0, 0.447);
+            background-blend-mode: multiply;
+        }
+        nav{
+            background-color: rgba(0, 0, 0, 0.393);
+        }
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            list-style: none;
+            text-align: center;
+            justify-content: center;
+            padding: 20px 0px;
+        }
+        li{
+            padding: 20px 0px;
+            letter-spacing: 1px;
+        }
+        a{
+            font-size: 28px;
+            text-decoration: none;
+            color: white;
+            width: 60px;
+        }
+        li:hover{
+            text-decoration: underline;
+            text-decoration-color:white ;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+        }
+        .navleft{
+            width: 50%;
+            padding: 10px;
+        }
+        .navright{
+            width: 50%;
+            padding: 0px 15px;
+        }
+        .contact{
+            background-color: rgba(0, 0, 0, 0.500);
+            border-radius: 5px;
+        }
+        h1{
+            color: white;
+            padding: 15px;
+            font-size: 35px;
+        }
+        main{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 150px;
+        }
+        main div img{
+            padding: 15px;
+        }
+        .logo{
+            width:250px
+        }
+        @media screen and (max-width:1100px){
+            li{
+                padding: 15px 0px;
+                letter-spacing: 0px;
+            }
+            h1{
+                padding: 10px;
+                
+            }
+            main{
+                padding: 100px;
+            }
+            a{
+                font-size: 20px;
+                width: 50px;
+            }
+            nav div img{
+                width: 70px;
+            }
+            body{
+                background-size: 100% 100vh;
+            }
+        } 
+        @media screen and (max-width: 750px) and (min-width:645px){
+            a{
+                font-size: 16px;
+                width: 40px;
+            }
+            .content div{
+                margin-top: 70px;
+                width: 400px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 60px;
+            } 
+            li{
+                padding: 11px 0px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100vh;
+            }
+            h1{
+                padding: 5px;
+                font-size: 35px;
+            }
+        }
+        @media (max-width:645px) and (min-width: 515px){
+            .navright{
+                width: 70%;
+            }
+            a{
+                font-size: 16px;
+                width: 40px;
+            }
+            .content div{
+                margin-top: 70px;
+                width: 350px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 60px;
+            } 
+            li{
+                padding: 11px 0px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100vh;
+            }
+            h1{
+                padding: 5px;
+                font-size: 25px;
+            }
+            button{
+            width: 120px;
+            font-size: 15px;
+            margin: 15px;
+            }
+            .navright{
+                width: 70%;
+            }
+            a{
+                font-size: 16px;
+                width: 40px;
+            }
+            .content div{
+                margin-top: 70px;
+                width: 350px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 60px;
+            } 
+            li{
+                padding: 11px 0px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100vh;
+            }
+            h1{
+                padding: 5px;
+                font-size: 25px;
+            }
+            button{
+            width: 120px;
+            font-size: 15px;
+            margin: 15px;
+            }
+            .logo{
+                width: 215px;
+            }
+        }
+        @media (max-width:515px) and (min-width: 440px){
+            .navright{
+                width: 70%;
+            }
+            a{
+                font-size: 13px;
+                width: 35px;
+            }
+            .content div{
+                margin-top: 60px;
+                width: 300px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 40px;
+            } 
+            li{
+                padding: 8px 0px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100vh;
+            }
+            h1{
+                padding: 5px;
+                font-size: 18px;
+            }
+            button{
+                width: 120px;
+                font-size: 15px;
+                margin: 15px;
+            }
+            ul{
+                padding: 14px 0px;
+            }
+            .content div p{
+                font-size: 13px;
+            }
+            .logo{
+                width: 170px;
+            }
+            main div a img{
+                width: 30px;
+            }
+            .fb{
+                width: 34px;
+            }
+        }
+        @media (max-width:440px) and (min-width: 300px){
+            .navright{
+                width: 70%;
+                padding: 0px 7px;
+            }
+            a{
+                font-size: 11px;
+                width: 35px;
+            }
+            .content div{
+                margin-top: 60px;
+                width: 270px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 38px;
+            } 
+            li{
+                padding: 6px 0px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100vh;
+            }
+            h1{
+                padding: 3px;
+                font-size: 18px;
+            }
+            button{
+                width: 100px;
+                font-size: 13px;
+                margin: 15px;
+            }
+            ul{
+                padding: 10px 0px;
+            }
+            .navleft{
+            padding: 5px;
+            }
+            .content div p{
+                font-size: 12px;
+            }
+            .logo{
+                width: 170px;
+            }
+            main div a img{
+                width: 30px;
+            }
+            .fb{
+                width: 34px;
+            }
+            main{
+                padding: 100px 0px 0px 0px;
+            }
+        }
+        @media (max-width:300px) and (min-width: 200px){
+            .navright{
+                width: 70%;
+                padding: 0px 7px;
+            }
+            a{
+                font-size: 11px;
+                width: 35px;
+            }
+            .content div{
+                margin-top: 60px;
+                width: 270px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 34px;
+            } 
+            li{
+                padding: 3px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100vh;
+            }
+            h1{
+                padding: 3px;
+                font-size: 18px;
+            }
+            button{
+                width: 100px;
+                font-size: 13px;
+                margin: 15px;
+            }
+            ul{
+                padding: 10px 0px;
+            }
+            .navleft{
+            padding: 5px;
+            }
+            .content div p{
+                font-size: 12px;
+            }
+            .logo{
+                width: 170px;
+            }
+            main div a img{
+                width: 30px;
+            }
+            .fb{
+                width: 34px;
+            }
+            main{
+                padding: 100px 0px 0px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="navleft"><img src="\developmentlogo.png" alt="logo" width="95px"></div>
+            <div class="navright"><ul>
+                <li class="home"><a href="\index.html">Home</a></li>
+                <li class="service"><a href="\service.html">Service</a></li>
+                <li class="contact"><a href="\contact.html">Contact</a> </li>
+                <li class="feedback"><a href="\feedback.html">Feedback</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div>
+               <h1>Feel Free To Contact Us!!!</h1>
+               <img class="logo" src="\developmentlogo.png" alt="logo"><br>
+               <a href="#"><img src="https://www.pngarts.com/files/11/Vector-IG-Logo-PNG-Transparent-Image.png" alt="insta" width="40px"> </a>
+               <a href="#"><img class="fb" src="https://www.pngarts.com/files/10/Vector-Facebook-Logo-Black-And-White-PNG-Picture.png" alt="facebook" width="45px"> </a>
+               <a href="#"><img src="https://www.nicepng.com/png/full/20-209794_twitter-icon-png-white-twitter-icon-png-white.png" alt="twitter" width="40px"> </a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

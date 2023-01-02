@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        body{
+            background-image: url(https://wallpaperaccess.com/full/1128280.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100vh;
+            background-color: rgba(0, 0, 0, 0.447);
+            background-blend-mode: multiply;
+        }
+        nav{
+            background-color: rgba(0, 0, 0, 0.393);
+        }
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            list-style: none;
+            text-align: center;
+            justify-content: center;
+            padding: 20px 0px;
+        }
+        li{
+            padding: 20px 0px;
+            letter-spacing: 1px;
+        }
+        a{
+            font-size: 28px;
+            text-decoration: none;
+            color: white;
+            width: 60px;
+        }
+        li:hover{
+            text-decoration: underline;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+        }
+        .navleft{
+            width: 50%;
+            padding: 10px;
+        }
+        .navright{
+            width: 50%;
+            padding: 0px 15px;
+        }
+        .service{
+            background-color: #0000009a;
+            border-radius: 5px;
+        }
+        .box{
+            background-color: rgba(255, 255, 255, 0.43);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 50px 0px;
+        }
+        .top{
+            display: grid;
+            grid-template-columns: 500px 500px;
+            column-gap: 50px;
+            justify-content: center;
+            
+        }
+        .box1{
+            background-color: rgba(255, 255, 255, 0.43);
+            width: 500px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .js{
+            display: grid;
+            justify-content: center;
+        }
+        h2{
+            text-align: center;
+            padding: 13px 5px;
+        }
+        .head,.button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+        }
+        .box1 .head h2{
+            padding: 10px 0px;
+        }
+        button{
+            width: 150px;
+            margin: 26px 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 18px;
+            background-color: #03acc1d1;
+            color: white;
+            font-size: 18px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #00889ad1;
+        }
+        
+        @media screen and (max-width:1100px) and (min-width: 975px){
+            li{
+                padding: 15px 0px;
+                letter-spacing: 0px;
+            }
+            body{
+                background-size: 1005 100%;
+            }
+            a{
+                font-size: 20px;
+                width: 50px;
+            }
+            nav div img{
+                width: 70px;
+            }
+            .top{
+                display: grid;
+                grid-template-columns: 450px 450px;
+                column-gap: 50px;
+                justify-content: center;
+            }
+            .box1,.box{
+                width: 420px;
+            }
+           
+        } 
+        @media screen and (max-width:975px) and (min-width: 870px){
+            li{
+                padding: 15px 0px;
+                letter-spacing: 0px;
+            }
+            body{
+                background-size: 100% 100vh;
+            }
+            a{
+                font-size: 20px;
+                width: 50px;
+            }
+            nav div img{
+                width: 70px;
+            }
+            .top{
+                display: grid;
+                grid-template-columns: 400px 400px;
+                column-gap: 40px;
+            }
+            .box1,.box{
+                width: 370px;
+            }
+        } 
+        @media screen and (max-width:870px) and (min-width: 750px){
+            li{
+                padding: 15px 0px;
+                letter-spacing: 0px;
+            }
+            body{
+                background-size: 100% 100vh;
+            }
+            a{
+                font-size: 20px;
+                width: 50px;
+            }
+            nav div img{
+                width: 70px;
+            }
+            .top{
+                display: grid;
+                grid-template-columns: 350px 350px;
+                column-gap: 40px;
+            }
+            .box1,.box{
+                width: 320px;
+            }
+        }               
+        @media screen and (max-width: 750px) and (min-width:660px){
+            a{
+                font-size: 16px;
+                width: 40px;
+            }
+            .content div{
+                margin-top: 70px;
+                width: 400px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 60px;
+            } 
+            li{
+                padding: 11px 0px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100vh;
+            }
+            h1{
+                padding: 5px;
+                font-size: 25px;
+            }
+            .top{
+                display: grid;
+                grid-template-columns: 300px 300px;
+                column-gap: 40px;
+                justify-content: center;
+            }
+            .box1,.box{
+                width: 270px;
+            }
+        }
+        @media screen and (max-width: 660px) and (min-width:470px){
+            a{
+                font-size: 16px;
+                width: 40px;
+            }
+            .content div{
+                margin-top: 70px;
+                width: 400px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 60px;
+            } 
+            li{
+                padding: 11px 0px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100%;
+            }
+            h1{
+                padding: 5px;
+                font-size: 25px;
+            }
+            .top{
+                display: grid;
+                grid-template-columns: 400px;
+                justify-content: center;
+            }
+            .box1,.box{
+                width: 370px;
+                margin-top: 50px;
+            }
+            
+        }
+        
+        @media (max-width:470px) and (min-width: 440px){
+            .navright{
+                width: 70%;
+            }
+            a{
+                font-size: 13px;
+                width: 35px;
+            }
+            .content div{
+                margin-top: 60px;
+                width: 300px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 40px;
+            } 
+            li{
+                padding: 8px 0px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100%;
+            }
+            h1{
+                padding: 5px;
+                font-size: 20px;
+            }
+            button{
+                width: 120px;
+                font-size: 15px;
+                margin: 15px;
+            }
+            ul{
+                padding: 14px 0px;
+            }
+            .content div p{
+                font-size: 13px;
+            }
+            .top{
+                display: grid;
+                grid-template-columns: 300px;
+                justify-content: center;
+            }
+            .box1,.box{
+                width: 270px;
+                margin-top: 50px;
+            }
+        }
+        @media (max-width:440px) and (min-width: 30px){
+            .navright{
+                width: 70%;
+                padding: 0px 7px;
+            }
+            a{
+                font-size: 11px;
+                width: 35px;
+            }
+            .content div{
+                margin-top: 60px;
+                width: 270px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 38px;
+            } 
+            li{
+                padding: 6px 0px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100%;
+            }
+            h1{
+                padding: 3px;
+                font-size: 18px;
+            }
+            button{
+                width: 100px;
+                font-size: 13px;
+                margin: 15px;
+            }
+            ul{
+                padding: 10px 0px;
+            }
+            .navleft{
+            padding: 5px;
+            }
+            .content div p{
+                font-size: 12px;
+            }
+            .top{
+                display: grid;
+                grid-template-columns: 300px;
+                justify-content: center;
+            }
+            .box1,.box{
+                width: 270px;
+                margin-top: 50px;
+            }
+        }
+        @media (max-width:300px) and (min-width: 200px){
+            .navright{
+                width: 70%;
+                padding: 0px 7px;
+            }
+            a{
+                font-size: 11px;
+                width: 35px;
+            }
+            .content div{
+                margin-top: 60px;
+                width: 270px;
+                padding: 10px 10px 15px 10px;
+            }
+            nav div img{
+                width: 34px;
+            } 
+            li{
+                padding: 3px;
+                letter-spacing: 0px;
+            } 
+            body{
+                background-size: 100% 100vh;
+            }
+            h1{
+                padding: 3px;
+                font-size: 18px;
+            }
+            button{
+                width: 100px;
+                font-size: 13px;
+                margin: 15px;
+            }
+            ul{
+                padding: 10px 0px;
+            }
+            .navleft{
+            padding: 5px;
+            }
+            .content div p{
+                font-size: 12px;
+            }
+            .top{
+                display: grid;
+                grid-template-columns: 250px;
+                justify-content: center;
+            }
+            .box1,.box{
+                width: 220px;
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="navleft"><img src="\developmentlogo.png" alt="logo" width="95px"></div>
+            <div class="navright">
+                <ul>
+                    <li class="home"><a href="\index.html">Home</a></li>
+                    <li class="service"><a href="\service.html">Service</a></li>
+                    <li class="contact"><a href="\contact.html">Contact</a></li>
+                    <li class="feedback"><a href="\feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="top">
+                <div class="box"> 
+                    <div class="head"><p><img src="https://assets.stickpng.com/images/5847f5bdcef1014c0b5e489c.png" alt="html_logo" width="50px"></p><h2> HTML </h2></div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est similique voluptatem dolorum excepturi dolores possimus dignissimos nesciunt quo, labore quia consequatur adipisci expedita odio! Voluptatum sit nihil asperiores laborum nemo obcaecati nobis ducimus commodi, sed natus voluptates sunt soluta velit quo tempora, saepe eum eveniet odio esse nulla harum vero?
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="head"><p><img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="css_logo" width="50px"></p><h2>CSS</h2></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, libero in doloremque maxime animi unde doloribus itaque porro atque, deleniti iusto dicta placeat voluptate ab perspiciatis, modi voluptatibus earum odit ratione architecto quibusdam voluptatem. Quisquam illo totam rem quam error, harum fuga? Sapiente hic autem, est maiores quod saepe cumque?
+                    </p>
+                </div>
+            </div>
+            <div class="js">
+                <div class="box1">
+                    <div class="head"><p><img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" alt="js_logo" width="70px"></p><h2>JAVA SCRIPT</h2></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, inventore expedita quos labore earum quibusdam culpa, dicta repellat nihil, sed voluptatum ea eaque beatae non nam aliquam. Commodi facilis quas animi quo impedit distinctio culpa numquam nisi. Inventore laboriosam totam praesentium dicta illo sed aliquam, labore incidunt ullam assumenda architecto!
+                    </p>
+                </div>
+            </div>
+            <div class="button">
+                <button> More services </button>
+           </div>
+        </main>
+    </div>
+</body>
+</html>
